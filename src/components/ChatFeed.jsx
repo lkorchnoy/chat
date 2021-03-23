@@ -4,15 +4,23 @@ import UserMessage from './UserMessage';
 
 
 const ChatFeed = (props) => {
-    const { chats, activeChat, userName, message } = props;
+    const { chats, activeChat, userName, messages } = props;
 
     const chat = chats && chats[activeChat];
 
     const renderMessages = () => {
-        
-    }
+        const keys = Object.keys(messages);
 
-    console.log(chat, userName, message);
+        return keys.map((key, index) => {
+            const message = messages[key];
+            const lastMessageKey = index === 0 ? null : keys[index-1];
+            const isMyMessage = username === message.sender.username;
+
+        })
+
+        console.log(keys);
+    }
+      
 
     return (
         <div>
