@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { sendMessage, isTyping } from 'react-chat-engine';
 
-const MessageForm = () => {
+const MessageForm = (props) => {
    
         const [value, setValue] = useState('');
 
@@ -8,7 +9,10 @@ const MessageForm = () => {
 
     }
 
-    const handleChange = () => {
+    const handleChange = (event) => {
+        setValue(event.target.value);
+
+        isTyping(props, chatId);
 
     }
 
@@ -19,6 +23,7 @@ const MessageForm = () => {
                placeholder="Send your message"
                value={value}
                onChange={handleChange}
+               onSubmit={handleSubmit}
                />
 
        </form>
