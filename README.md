@@ -1,20 +1,53 @@
-# Getting Started with Create React App
+README
+
+Welcome to Chat App!
+Create different chats, add users with avatars and chat. Send text messages, images, get read receipts.
+
+Deployed on Netlify 
+https://chatcommunity.netlify.app/ 
+
+Installing
+
+You can clone this repo with SSH or HTTPS git@github.com:lkorchnoy/chat.git or https://github.com/lkorchnoy/chat.git
+or open it by typing the below into your terminal
+
+git clone https://github.com/lkorchnoy/chat.git
+
+Usage 
+
+Create and share your chats. Sign up and create an account (free account is available with limited access)on https://chatengine.io/ Create users and add them to the chat. In App.js change Project ID to the Project ID you got when creating an account.
+
+Contributing 
+
+Bug reports and pull requests are welcome on GitHub at 
+https://github.com/lkorchnoy/chat.git
+
+License
+
+The repository is available as open source under the terms of the MIT License https://github.com/lkorchnoy/react_project/blob/master/LICENSE
+
+Code of Conduct
+
+Everyone interacting in the project’s codebases, issue trackers are expected to follow the code of conduct.
+
+Tech information:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn start` or 'npm start'
 
-Runs the app in the development mode.\
+Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+
+
+
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
