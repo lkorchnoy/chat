@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import { sendMessage, isTyping } from 'react-chat-engine';
 import { SendOutlined, PictureOutlined } from '@ant-design/icons';
-import Map from '../Map';
+/* 
+import MapButton from './MapButton'; */
 
 
 
@@ -32,9 +33,9 @@ import Map from '../Map';
         sendMessage(creds, chatId, { files: event.target.files, text: '' });
     }
     
-    const handleUploadMap = (event) => {
-        console.log("hello");
-    }
+    /* const handleUploadMap = (e) => {
+        console.log(e.target.btn.value);
+    } */
     
     return (
        <form className="message-form" onSubmit={handleSubmit} >
@@ -67,14 +68,14 @@ import Map from '../Map';
                    
                    />
 
-                   <input 
+                   {/* <input 
                    type="text"
                    multiple={false}
                    id="upload-button-map"
                    style={{ display: 'none' }}
                    onSubmit={handleUploadMap}
                    
-                   />  
+                   />   */}
                    
 
            <button type="submit" className="send-button">
@@ -82,8 +83,9 @@ import Map from '../Map';
                
 
            </button>
-           <button type="button" className="map-button">
+           <button type="submit" className="send-button">
            <SendOutlined className="map-icon" />
+        {/*    <MapButton /> */}
            </button>
        </form>
     );
