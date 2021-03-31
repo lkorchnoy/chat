@@ -1,43 +1,40 @@
 import React, { Component } from 'react';
+
 import Map from '../Map';
 
-class MapButton extends Component {
-
-    state = {
-        button: 'map'
-        
-    }
-
-    handleChange = event => {
-        const { name, value } = event.target 
-
-        this.setState({
-            [name]: value 
-        })
-    }
-
-    handleSubmit = event => {
-        event.preventDefault()
-        console.log("hi");
-    }
+class MapButton extends React.Component {
 
 
-
-    render() {
-        
-        return (
-            <div className="map-icon">
-            <form onSubmit={ this.handleSubmit }>
-                <label>Map:</label>
-                <input type='text' value={this.state.button} onChange={this.handleChange} />
-                
-                <input type='submit'/>
-            </form>
+    constructor(props) {
+          super(props);
+          this.state = {
+            showComponent: false,
+          };
+          this._onButtonClick = this._onButtonClick.bind(this);
+        }
+      
+        _onButtonClick() {
+          this.setState({
+            showComponent: true,
+          });
+        }
+      
+        render() {
+          return (
+            <div>
+              <button type="submit" className="send-button" onClick={this._onButtonClick}>Google Map</button>
+              
+              {this.state.showComponent ?
+                 <Map /> :
+                 null
+              }
             </div>
-                
-            
-        );
-    }
-}
+          );
+        }
+      }
+      
+
+    
 
 export default MapButton;
+ 

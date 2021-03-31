@@ -9,16 +9,16 @@ const Map = () => {
     height: "80vh",
     width: "100%"};
   const defaultCenter = {
-    lat: 33.554330310241966, lng: -82.89563459258274
+    lat:  40.750597306295056, lng: -74.00525518156246
   }
   const locations = [
       {
         name: "Chat", 
         location: {
-            lat: 33.554330310241966, 
-            lng: -82.89563459258274
+            lat:  40.750597306295056, 
+            lng: -74.00525518156246
       },
-        address: "115 Broad Street, Crawfordville, GA 30631"
+        address: "555 W 25th St, New York, NY 10001"
     }
 ]
   return (
