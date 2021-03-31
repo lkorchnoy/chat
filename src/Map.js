@@ -13,7 +13,7 @@ const Map = () => {
   }
   const locations = [
       {
-        name: "Chat", 
+        name: "Unpakt", 
         location: {
             lat:  40.750597306295056, 
             lng: -74.00525518156246
