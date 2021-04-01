@@ -1,10 +1,10 @@
 README
 
 Welcome to Chat App!
-Create different chats, add users with avatars and chat. Send text messages, images, get read receipts.
+Create different chats, add users with avatars and chat. Send text messages, images, get read receipts. Use Google Maps within a chat.
 
 Deployed on Netlify 
-https://chatcommunity.netlify.app/ 
+https://unpakt.netlify.app
 
 Installing
 
