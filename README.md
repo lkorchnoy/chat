@@ -15,7 +15,7 @@ git clone https://github.com/lkorchnoy/chat.git
 
 Usage 
 
-Create and share your chats. Sign up and create an account (free account is available with limited access)on https://chatengine.io/ Create users and add them to the chat. In App.js change Project ID to the Project ID you got when creating an account. Go on the application website https://chatcommunity.netlify.app/ login and use the chat.
+Create and share your chats. Sign up and create an account (free account is available with limited access)on https://chatengine.io/ Create users and add them to the chat. In App.js change Project ID to the Project ID you got when creating an account. Go on the application website login and use the chat.
 
 Contributing 
 
